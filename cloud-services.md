@@ -76,5 +76,16 @@ The term "Cloud Computing" can be used to refer to all categories, even though i
 
 ## TYPES OF CLOUD COMPUTING RESPONSIBILITIES
 
-| On-Premise | Infrastructure as a Service | Platform as a Service | Software as a Service |
-| ---------- | --------------------------- | --------------------- | --------------------- |
+- Orange indicates that the Customer is Responsible
+
+| On-Premise     | Infrastructure as a Service | Platform as a Service | Software as a Service            |
+| -------------- | --------------------------- | --------------------- | -------------------------------- |
+| Applications   | Applications                | Applications          | $${\color{orange}Applications}&& |
+| Data           | Data                        | Data                  | Data                             |
+| Runtime        | Runtime                     | Runtime               | Runtime                          |
+| Middleware     | Middleware                  | Middleware            | Middleware                       |
+| OS             | OS                          | OS                    | OS                               |
+| Virtualization | Virtualization              | Virtualization        | Virtualization                   |
+| Servers        | Servers                     | Servers               | Servers                          |
+| Storage        | Storage                     | Storage               | Storage                          |
+| Networking     | Networking                  | Networking            | Networking                       |
