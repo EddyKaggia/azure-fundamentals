@@ -2,7 +2,7 @@
 
 ## SOLUTIONS ARCHITECT
 
-A role in a technical organization that architects a technical solution using multiple systems via researching, documentation, experimentation.
+A role in a technical organization that architects a technical solution using multiple systems via research, documentation, and experimentation.
 
 ## CLOUD ARCHITECT
 
@@ -24,6 +24,9 @@ A cloud architect needs to understand the following terms and factor them into t
 
 The ability of your service to **remain available** by ensuring there is _no single point of failure_ and/or ensure a certain level of performance.
 
+![Screenshot 2024-03-20 at 6 11 31 PM](https://github.com/EddyKaggia/azure-fundamentals/assets/79530586/cb68261f-742d-4dc1-9e13-91e89b7ca3bc)
+
+
 ### Azure Load Balancer
 
 - A load balancer allows you to evenly distribute traffic to multiple servers in one or more datacenters.
@@ -35,17 +38,23 @@ Running your workload across multiple **Availability Zones** ensures that 1 or 2
 
 ### Vertical Scaling (Scaling Up)
 
+![Screenshot 2024-03-20 at 6 18 29 PM](https://github.com/EddyKaggia/azure-fundamentals/assets/79530586/8004484e-8320-442b-a3c4-7c0905633ce6)
+
 Upgrade to a bigger server
 
 ### Horizontal Scaling (Scaling Out)
+
+![Screenshot 2024-03-20 at 6 18 45 PM](https://github.com/EddyKaggia/azure-fundamentals/assets/79530586/4385586c-2f4a-4d91-9e5b-85c38d3b33ec)
 
 Add more servers of the same size
 
 ## HIGH ELASTICITY
 
-Your ability to **automatically** increase or decrease your capacity based on teh current demand of traffic, memory and computing power
+Your ability to **automatically** increase or decrease your capacity based on the current demand of traffic, memory, and computing power
 
 ### Horizontal Scaling
+
+![Screenshot 2024-03-20 at 6 28 47 PM](https://github.com/EddyKaggia/azure-fundamentals/assets/79530586/e5aa6fd7-7467-4a09-8c59-f50320479c77)
 
 > #### Azure VM Scale Sets
 
@@ -53,7 +62,7 @@ Your ability to **automatically** increase or decrease your capacity based on te
 
 > ### SQL Server Stretch Database
 
-    Dynamically stretch warm and cold transactional data from MicroSoft SQL Server 2016 to Microsoft Azure.
+    Dynamically stretch warm and cold transactional data from Microsoft SQL Server 2016 to Microsoft Azure.
 
 Scaling **Out** - Add more servers of the same size
 Scaling **In** - Remove more servers of the same size
@@ -62,13 +71,15 @@ Vertical scaling is generally hard for traditional architecture so you'll usuall
 
 ## FAULT TOLERANT
 
-The ability for your service to ensure there is _no single point of failure_. **Preventing** the chance of failure.
+The ability of your service to ensure there is _no single point of failure_. **Preventing** the chance of failure.
 
-**Fail-overs** is when you have a plan to shift traffic to a redundant system in case the primary system fails.
+**Fail-overs** are when you have a plan to shift traffic to a redundant system in case the primary system fails.
 
-You can use **Azure Traffic Manager** which is a DNS-based traffic balancer to fail-over from a failing _primary_ system to a stand-by _secondary_ system.
+![Screenshot 2024-03-20 at 6 30 22 PM](https://github.com/EddyKaggia/azure-fundamentals/assets/79530586/a5f64d5d-8359-4461-8e48-2b34276caac0)
 
-A common example is having a copy (_secondary_) of your database where all ongoing changes are synced. The _secondary_ system is not in-use until a fail over occurs and it becomes the _primary_ database.
+You can use **Azure Traffic Manager**, a DNS-based traffic balancer, to fail-over from a failing _primary_ system to a stand-by _secondary_ system.
+
+A common example is having a copy (_secondary_) of your database where all ongoing changes are synced. The _secondary_ system is not in use until a fail-over occurs and it becomes the _primary_ database.
 
 ## HIGH DURABILITY
 
